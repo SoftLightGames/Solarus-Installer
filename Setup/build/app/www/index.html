@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Solarus Setup</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/folder.css">
+</head>
+<body>
+    <div id="background" class="background"></div>
+    <main id="main">
+        <img class="logo" src="../../src/img/solarus-logo.png">
+        <h1>Bienvenue dans l'assistant d'installation de Solarus</h1>
+        <img class="branding" src="../../src/img/homepage-image.webp">
+        <button onclick="openSolarusWebsite()">Site Web</button>
+    </main>
+    <div id="components" class="components">
+        <h1>Choisissez les composants à installer</h1>
+        <div class="one">
+            <label class="cbc"><b>Solarus Launcher</b>
+                <input id="launcher" type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <p>Si vous êtes un <b>joueur</b> et que vous voulez simplement jouer aux quêtes Solarus.</p>
+        </div>
+        <div class="two">
+            <label class="cbc"><b>Solarus Quest Editor</b>
+                <input id="quest_editor" type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <p>Si vous êtes un <b>développeur de jeux</b> et que vous voulez créer des quêtes Solarus.</p>
+        </div>
+        <p>Espace requis: <span id="size"><b>_</b></span> Mo</p>
+    </div>
+    <div id="folder" class="folder">
+        <div id="disabledElem" class="disabled"></div>
+        <h1>Choisissez le dossier de destination</h1>
+        <div class="one">
+            <h3>Dossier sélectionné:</h3>
+            <div id="path" class="path">C:\Program Files</div>
+            <button onclick="browse()">Parcourir</button>
+        </div>
+        <div class="two">
+            <label class="cbc"><p>Créer un raccourci sur le bureau</p>
+                <input id="shortcut" type="checkbox" checked>
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <footer id="footer">
+        <button id="prevBtn" disabled onclick="previous()">Précédent</button>
+        <button id="nextBtn" onclick="next()">Suivant</button>
+        <button style="display: none;" id="installBtn" onclick="install()">Installer</button>
+    </footer>
+    <script src="../../assets/js/api.js"></script>
+    <script src="../../assets/js/index.js"></script>
+</body>
+</html>

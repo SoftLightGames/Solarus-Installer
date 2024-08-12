@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Solarus Setup</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/folder.css">
+</head>
+<body>
+    <div id="background" class="background"></div>
+    <main id="main">
+        <img class="logo" src="../../src/img/solarus-logo.png">
+        <h1>Welcome to the Solarus Installer</h1>
+        <img class="branding" src="../../src/img/homepage-image.webp">
+        <button onclick="openSolarusWebsite()">Website</button>
+    </main>
+    <div id="components" class="components">
+        <h1>Choose components to install</h1>
+        <div class="one">
+            <label class="cbc"><b>Solarus Launcher</b>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <p>If you're a <b>gamer</b> and just want to play Solarus quests.</p>
+        </div>
+        <div class="two">
+            <label class="cbc"><b>Solarus Quest Editor</b>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <p>If you're a <b>game developer</b> and want to create Solarus quests.</p>
+        </div>
+        <p>Space required: <span id="size"><b>_</b></span> MB</p>
+    </div>
+    <div id="folder" class="folder">
+        <div class="disabled"></div>
+        <h1>Choose destination folder</h1>
+        <div class="one">
+            <h3>Selected folder:</h3>
+            <div id="path" class="path"></div>
+            <button id="selectFolder" onclick="navigate">Browse</button>
+        </div>
+        <div class="two">
+            <label class="cbc"><p>Create a desktop shortcut</p>
+                <input type="checkbox" checked>
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <footer id="footer">
+        <button id="prevBtn" disabled onclick="previous()">Previous</button>
+        <button id="nextBtn" onclick="next()">Next</button>
+        <button style="display: none;" id="installBtn" onclick="install()">Install</button>
+    </footer>
+    <script src="../../assets/js/api.js"></script>
+    <script src="../../assets/js/index.js"></script>
+</body>
+</html>

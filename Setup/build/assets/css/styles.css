@@ -1,0 +1,169 @@
+:root {
+    --primary-color: #ffab00;
+    --secondary-color: #ff7b00;
+    --main-background-color: #4a2c94;
+    --secondary-background-color: #2e1b66;
+}
+
+@font-face {
+    font-family: 'Ubuntu Titling Bold';
+    src: url('../../src/fonts/UbuntuTitling-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: url('../../src/fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url('../../src/fonts/Inter-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+*, ::before, ::after, :focus, :hover {
+    transition: all .3s ease, opacity 1s ease;
+}
+
+body {
+    color: var(--secondary-color);
+    background-color: var(--secondary-background-color);
+    background-image: url(../../src/img/background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background-color: rgba(74,44,148,.9);
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    overflow: hidden;
+    user-select: none;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+button {
+    color: var(--main-background-color);
+    cursor: pointer;
+    outline: none;
+    width: 256px;
+    height: 32px;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+}
+
+button:disabled {
+    pointer-events: none;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu Titling Bold', sans-serif;
+}
+
+body, p, span, div {
+    font-family: 'Inter Regular', sans-serif;
+}
+
+b, button {
+    font-family: 'Inter Bold', sans-serif;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2vh;
+}
+
+.cbc {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.cbc input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.cbc:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+
+.cbc input:checked ~ .checkmark {
+    background-color: var(--primary-color);
+}
+  
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+
+.cbc input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+
+.cbc .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

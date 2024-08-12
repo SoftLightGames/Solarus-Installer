@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Solarus Setup</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <link rel="stylesheet" href="../../assets/css/install.css">
+</head>
+<body>
+    <div class="background"></div>
+    <h1>Découvrir</h1>
+    <div class="game-container" id="container">
+        <div id="img" class="game-img"></div>
+        <div class="game-item">
+            <h3 id="title">Nom</h3>
+            <p id="desc">Desc</p>
+            <button onclick="watch()">Télécharger</button>
+        </div>
+    </div>
+    <div class="progress">
+        <p><span id="progressText">Démarrage de l'installation</span><span id="one">.</span><span id="two">.</span><span id="three">.</span></p>
+        <div class="progress-bar"><span id="progress"></span></div>
+    </div>
+    <script src="../../assets/js/api.js"></script>
+    <script src="../../assets/js/install.js"></script>
+</body>
+</html>

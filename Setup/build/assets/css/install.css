@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../../src/img/solarus-logo.png");
+}
+
+.background {
+    display: block;
+}
+
+h1 {
+    position: fixed;
+    top: 2vh;
+}
+
+p {
+    color: #aaa;
+    font-weight: bold;
+}
+
+span {
+    transition: opacity .3s ease;
+}
+
+.game-container {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+}
+
+.game-container .game-img {
+    width: 350px;
+    height: 180px;
+    border: solid 2px var(--secondary-color);
+    border-radius: 30px;
+    background-color: var(--secondary-background-color);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.game-container .game-item {
+    width: 350px;
+    height: 200px;
+    position: relative;
+}
+
+.game-container .game-item h3 {
+    text-align: center;
+}
+
+.game-container .game-item p {
+    text-align: justify;
+}
+
+.game-container .game-item button {
+    position: absolute;
+    bottom: 0;
+    margin-left: 47px;
+}
+
+.progress {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.progress p {
+    text-align: center;
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #aaa;
+}
+
+.progress .progress-bar span {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 8px;
+    background-color: var(--primary-color);
+    filter: drop-shadow(0 -4px 4px var(--primary-color));
+}
+
+@keyframes moveProgressBar {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: calc(100% + 20px);
+    }
+}

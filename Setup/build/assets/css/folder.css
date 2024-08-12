@@ -1,0 +1,70 @@
+.folder {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 1s ease;
+}
+
+.folder h1 {
+    position: fixed;
+    top: 2vh;
+}
+
+.folder .one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.folder h3 {
+    margin-bottom: 1vh;
+}
+
+.folder .path {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: 32px;
+    background-color: var(--secondary-background-color);
+    border: solid 2px var(--secondary-color);
+    border-radius: 8px;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    color: #ccc;
+}
+
+.folder button {
+    margin-top: 2vh;
+    color: white;
+   background-color: var(--secondary-color); 
+}
+
+.folder button:hover {
+    background-color: var(--primary-color);
+}
+
+.folder p, .folder h3 {
+    color: #aaa;
+}
+
+.folder .one, .components .two {
+    padding: 4vh;
+}
+
+.folder .disabled {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    opacity: 0;
+    background-color: white;
+    cursor: wait;
+}

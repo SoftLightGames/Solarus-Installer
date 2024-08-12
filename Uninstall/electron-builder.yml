@@ -1,0 +1,14 @@
+appId: fr.S2009.solarus.uninstall
+productName: uninstall
+artifactName: ${productName}.${ext}
+copyright: Copyright © 2024 S2009
+directories:
+  output: dist
+files:
+  - build/**/*
+win:
+  target:
+    - portable
+  compression: maximum
+portable:
+  requestExecutionLevel: admin

@@ -1,0 +1,31 @@
+{
+  "name": "solarus-uninstaller",
+  "displayName": "Solarus Uninstaller",
+  "description": "Solarus Uninstaller",
+  "author": {
+    "name": "S2009",
+    "email": "S2009.developer1@laposte.net",
+    "url": "https://sls.alwaysdata.net/S2009"
+  },
+  "icon": "build/icon.ico",
+  "version": "1.0.0",
+  "main": "build/app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win && clean.bat"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bundleDependencies": [
+    "path",
+    "fs-extra",
+    "child-process"
+  ],
+  "devDependencies": {
+    "electron": "^31.3.1",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  }
+}

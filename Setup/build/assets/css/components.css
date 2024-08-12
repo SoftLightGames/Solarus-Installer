@@ -1,0 +1,22 @@
+.components {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 1s ease;
+}
+
+.components h1 {
+    position: fixed;
+    top: 2vh;
+}
+
+.components p {
+    color: #aaa;
+}
+
+.components .one, .components .two {
+    padding: 4vh;
+}
