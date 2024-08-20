@@ -1,3 +1,8 @@
+# Dev folders
 .vscode
 dist
 node_modules
+
+# Critical files
+cert.pfx
+sign.bat

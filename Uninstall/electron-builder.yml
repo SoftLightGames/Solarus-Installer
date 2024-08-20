@@ -1,7 +1,7 @@
 appId: fr.S2009.solarus.uninstall
 productName: uninstall
 artifactName: ${productName}.${ext}
-copyright: Copyright © 2024 S2009
+copyright: Copyright © 2024 S2009, GPLv3, CC BY-SA 4.0
 directories:
   output: dist
 files:

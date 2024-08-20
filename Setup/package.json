@@ -8,14 +8,14 @@
     "url": "https://sls.alwaysdata.net/S2009"
   },
   "icon": "build/icon.ico",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "build/app/main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder --win && clean.bat"
   },
   "keywords": [],
-  "license": "ISC",
+  "license": "GPLv3, CC BY-SA 4.0",
   "bundleDependencies": [
     "path",
     "fs-extra",
