@@ -6,3 +6,6 @@ node_modules
 # Critical files
 cert.pfx
 sign.bat
+
+# Dev files
+build.bat
