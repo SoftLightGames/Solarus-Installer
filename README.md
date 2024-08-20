@@ -11,4 +11,4 @@ For Windows x64 only.
 - <b>[Solarus Setup](https://sls.alwaysdata.net/solarus?setup)</b>
 - <b>[Source Code](https://github.com/SLGstudios/Solarus-Installer/archive/refs/heads/main.zip)</b>
 
-## [Author and Liscences](https://github.com/SLGstudios/Solarus-Installer/blob/main/LISCENSES.md)
+## [Author and Liscences](https://github.com/SLGstudios/Solarus-Installer/blob/main/LICENCES.md)
