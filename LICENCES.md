@@ -1,0 +1,6 @@
+# Solarus Installer Licences
+[![Solarus Logo](https://github.com/SLGstudios/Solarus-Installer/blob/main/Setup/build/src/img/solarus-logo.png?raw=true)](https://solarus-games.org)
+
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/SLGstudios/Solarus-Installer">Solarus Installer</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://sls.alwaysdata.net/S2009">S2009</a> is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GPLv3</a> and <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+
+## [Infos and Downloads](https://github.com/SLGstudios/Solarus-Installer/blob/main/README.md)
